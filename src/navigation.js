@@ -14,11 +14,11 @@ export const headerData = {
       text: 'Proyectos',
       links: [
         {
-          text: 'Container',
+          text: '001 - Container',
           href: getPermalink('/proyectos/container'),
         },
         {
-          text: 'Lo de Huguito',
+          text: '003 - Lo de Huguito',
           href: getPermalink('proyectos/hugo'),
         }        
       ],
