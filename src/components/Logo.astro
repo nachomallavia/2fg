@@ -1,6 +1,13 @@
 ---
-import { SITE } from '~/utils/config';
 import LOGO from '~/assets/images/logo.svg';
 ---
 
-<img src={LOGO.src} alt="2fg Logo" />
+<div class="logodiv">
+  <img src={LOGO.src} width={LOGO.width} height={LOGO.height} class="max-w-20 dark:invert" />
+</div>
+
+<style>
+  .logodiv {
+    fill: blue;
+  }
+</style>
