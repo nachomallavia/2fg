@@ -12,6 +12,8 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import Slider from '~/components/Slider.astro';
+
 const metadata = {
   title: '2FG - Arquitectos',
   ignoreTitleTemplate: true,
@@ -35,11 +37,19 @@ const metadata = {
   >
     <Fragment slot='title'> Estudio de arquitectura </Fragment>
 
-    <Fragment slot='subtitle'>
-      <span class='hidden sm:inline'> <span class='font-semibold'>2FG</span> es un equipo de primer nivel</span>
-    </Fragment>
+    <!-- <Fragment slot='subtitle'>
+      <span class='hidden sm:inline'>
+        <span class='font-normal'>
+          Si estás en la búsqueda de un arquitecto en Neuquén, Cipolletti o General Roca, te damos la bienvenida a 2FG,
+          tu destino para soluciones arquitectónicas de excelencia. Desde estas ciudades, extendemos nuestros servicios
+          para abarcar toda la región del Alto Valle.<br /> En 2FG, nos sumergimos en cada proyecto con meticulosidad, abrazando
+          la singularidad de cada cliente y adaptándonos a las circunstancias específicas de cada entorno. Confía en nuestra
+          experiencia y dedicación para materializar tus visiones arquitectónicas con elegancia y precisión.</span
+        >
+      </span>
+    </Fragment> -->
   </Hero>
-
+  <Slider />
   <!-- Note Widget ******************* -->
 
   <Note />

@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+const slides = import.meta.glob('../assets/slides/*.png');
+const importedImages = async () => {
+  let array: any[] = [];
+  for (const slide in slides) {
+    let importedImage = await slides[slide]();
+    array.push(importedImage.default);
+  }
+  return array;
+};
+const imgArray = await importedImages();
+console.log(imgArray);
+---
+
+<div class='container'>
+  <div class='slider-wrapper'>
+    <div class='slider'>
+      {imgArray.map((slide) => <Image src={slide} alt='slide' format='webp' />)}
+    </div>
+  </div>
+</div>

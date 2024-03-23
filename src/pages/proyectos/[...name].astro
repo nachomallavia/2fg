@@ -1,0 +1,11 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '~/layouts/PageLayout.astro';
+const projects = await Astro.glob('../../data/projects/*.md');
+console.log(projects);
+export const getStaticPaths = (() => {
+  return [];
+}) satisfies GetStaticPaths;
+---
+
+<Layout />
